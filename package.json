@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/swous-sds/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/swous-sds/frontend-project-44#readme"
+  "homepage": "https://github.com/swous-sds/frontend-project-44#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
