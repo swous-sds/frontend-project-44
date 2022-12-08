@@ -17,7 +17,7 @@ const greeting = () => {
    console.log(`Question: ${theNumber}`);
    const answersUser = readlineSync.question('Your answer: ');
    const theEvenNumber = (theNumber % 2 === 0) && (answersUser === 'yes');
-   const theOddNumber = (theEvenNumber % 2 !== 0) && (answersUser === 'no'); // ОТВЕТЫ ЧЕЛИКА ДАЛЬШЕ БУДЕТ ПРОВЕРКА
+   const theOddNumber = (theEvenNumber % 2 !== 1) && (answersUser === 'no'); // ОТВЕТЫ ЧЕЛИКА ДАЛЬШЕ БУДЕТ ПРОВЕРКА
    if (theEvenNumber === true || theOddNumber === true) {
       console.log('Correct!')
    } else {
@@ -30,4 +30,5 @@ const greeting = () => {
    };
 };
 greeting();
+
 export default greeting;
