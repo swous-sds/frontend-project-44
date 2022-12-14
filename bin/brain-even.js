@@ -3,8 +3,8 @@
 import readlineSync from 'readline-sync';
 const greeting = () => {
 	console.log('Welcome to the Brain Games!');
-	const name = readlineSync.question('May I have your name?: ');
-	console.log(`Hello, ${name}!`); // это добавили 
+	const playerName = readlineSync.question('May I have your name?: ');
+	console.log(`Hello, ${playerName}!`); // это добавили 
 
    console.log('Answer "yes" if the number is even, otherwise answer "no".');
    const getRandomNember = (min = 0, max = 50) => {
@@ -22,11 +22,11 @@ const greeting = () => {
       console.log('Correct!')
    } else {
       const correctAnswers = (answersUser === 'yes' ? 'no' : 'yes'); // ЧТОБЫ ВЫВОДИЛСЯ ОТВЕТ ДА ИЛИ НЕТ ДЛЯ ЛОХА КОТОРЫЙ НЕ РЕШИЛ
-      console.log(`'${correctAnswers}' is wrong answer ;(. Correct answer was '${correctAnswers}'.`)
-      console.log(`Let's try again, ${name}`)
+      console.log(`'${answersUser}' is wrong answer ;(. Correct answer was '${correctAnswers}'.`)
+      console.log(`Let's try again, ${playerName}`)
       return;
    };
-   console.log(`Congratulations, ${name}!`);
+   console.log(`Congratulations, ${playerName}!`);
    };
 };
 greeting();
