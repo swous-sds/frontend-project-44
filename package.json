@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/swous-sds/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/swous-sds/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -10,24 +11,21 @@
     "type": "git",
     "url": "git+https://github.com/swous-sds/frontend-project-44.git"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/swous-sds/frontend-project-44/issues"
   },
   "homepage": "https://github.com/swous-sds/frontend-project-44#readme",
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "readline-sync": "^1.4.10"
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.45.1",
-    "@typescript-eslint/parser": "^5.45.1",
-    "eslint": "^8.29.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-rallycoding": "^3.2.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react": "^7.31.11"
+    "dependencies": {
+      "readline-sync": "^1.4.10"
+    },
+    "devDependencies": {
+      "eslint": "^8.28.0",
+      "eslint-config-airbnb-base": "^15.0.0",
+      "eslint-plugin-import": "^2.26.0"
+    }
   }
-}
