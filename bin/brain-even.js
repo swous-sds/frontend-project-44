@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-//import greeting from '../src/core.js';
+import greeting  from '../src/cli';
 import readlineSync from 'readline-sync';
-const greeting = () => {
-	console.log('Welcome to the Brain Games!');
-	const playerName = readlineSync.question('May I have your name?: ');
-	console.log(`Hello, ${playerName}!`); // это добавили 
+
+const playerName = greeting();
+	
 
    console.log('Answer "yes" if the number is even, otherwise answer "no".');
    const getRandomNember = (min = 0, max = 50) => {
@@ -27,8 +26,4 @@ const greeting = () => {
       return;
    };
    console.log(`Congratulations, ${playerName}!`);
-   };
-};
-greeting();
-
-export default greeting;
+   }
